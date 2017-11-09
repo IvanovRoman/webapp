@@ -1,0 +1,6 @@
+1234
+<<<<<<< HEAD
+3456
+3456
+=======
+>>>>>>> parent of d53a620... My second commit

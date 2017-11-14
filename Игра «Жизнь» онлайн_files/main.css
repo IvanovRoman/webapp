@@ -1,0 +1,136 @@
+/* common */
+
+body {
+  font-family: sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+pre {
+  overflow: auto;
+  border: 1px solid #777;
+  padding: 10px;
+}
+
+hr {
+  border: 1px solid #000;
+  height: 0;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #003;
+}
+
+.toc a:hover {
+  color: #600;
+  text-decoration: underline;
+}
+
+.toc a:visited {
+  color: #300;
+}
+
+.toc ul {
+  padding-left: 1.5em;
+}
+
+.more {
+  color: #555;
+  font-size: 80%;
+  border-color: #faa;
+  border-style: solid;
+  border-width: 0 0 0 15px;
+  padding: 0 0 0 5px;
+}
+
+.mail textarea {
+  width: 100%;
+  margin: 0px;
+  resize: none;
+  border: 1px solid #777;
+  outline: none;
+}
+
+/*spec*/
+
+body {
+  padding: 0;
+  margin: 8px;
+}
+
+.toc_ctl {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.toc {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 300px;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  padding: 0 10px 0 0;
+}
+
+body {
+  margin-left: 328px;
+}
+
+body.navigation {
+  margin-left: 8px;
+}
+
+.navigation .toc {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: auto;
+  border-width: 0 0 1px 0;
+}
+
+.navigation .toc_body {
+  display: none;
+}
+
+.navigation .toc_ctl:after {
+  content: " ▼";
+}
+
+@media (max-width: 800px) {
+
+  .toc {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    border-width: 0 0 1px 0;
+  }
+
+  .toc_ctl:after {
+    content: " ▼";
+  }
+
+  .toc_body {
+    display: none;
+  }
+
+  body, body.navigate {
+    margin: 8px;
+  }
+
+  .navigation .toc_ctl:after {
+    content: "";
+  }
+
+  .navigation .toc_body {
+    display: block;
+  }
+}

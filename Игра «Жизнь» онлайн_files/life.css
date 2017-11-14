@@ -1,0 +1,56 @@
+#life table.life {
+  cursor: crosshair;
+  border-collapse: collapse;
+  margin: 1px auto;
+}
+
+#life table.life td {
+  border: 1px solid #ccc;
+  width: 7px;
+  height: 7px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  background-color: #fff;
+}
+
+#life table.life td.alive {
+  background-color: #300;
+}
+
+#life canvas {
+  cursor: crosshair;
+  border: 1px solid #888;
+  display: block;
+  margin: 1px auto;
+}
+
+#life input {
+  width: 3em;
+}
+
+#life .window {
+  border: 1px solid #888;
+}
+
+#life .window .title {
+  color: #fff;
+  background-color: #888;
+  font-size: .7em;
+  font-weight: bold;
+}
+
+#life .window .subtitle {
+  color: #888;
+  font-size: .7em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#life .message {
+  background-color: #ff0;
+  margin: 1px auto;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
